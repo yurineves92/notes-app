@@ -1,4 +1,4 @@
-# todo-app
+# notes-app
 
 ## Project setup
 ```
