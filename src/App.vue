@@ -1,26 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="main_content">
+    <component :is="layout"></component>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AdminLayout from './components/AdminLayout.vue'
+import AppLayout from './components/AppLayout.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  computed: {
+    layout() {
+      const loggedIn = localStorage.getItem('user')
+      return loggedIn ? AdminLayout : AppLayout
+    }
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
 </style>
