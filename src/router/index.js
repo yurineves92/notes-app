@@ -3,6 +3,7 @@ import AppLayout from '@/components/AppLayout.vue'
 import AdminLayout from '@/components/AdminLayout.vue'
 import LoginForm from '@/views/auth/LoginForm.vue'
 import RegisterForm from '@/views/auth/RegisterForm.vue'
+import ResetPasswordForm from '@/views/auth/ResetPasswordForm.vue'
 import NotesList from '@/views/admin/notes/NotesList.vue'
 
 const routes = [
@@ -17,6 +18,10 @@ const routes = [
       {
         path: 'register',
         component: RegisterForm
+      },
+      {
+        path: 'reset',
+        component: ResetPasswordForm
       }
     ]
   },

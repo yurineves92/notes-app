@@ -13,4 +13,7 @@ export default {
 </script>
 
 <style scoped>
+.input {
+    background: black;
+}
 </style>

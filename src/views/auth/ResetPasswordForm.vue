@@ -2,7 +2,7 @@
     <div class="container mt-5">
         <div class="row main_content">
             <div class="col-md-4 mx-auto">
-                <form @submit.prevent="login">
+                <form @submit.prevent="reset">
                     <div class="mb-3">
                         <label for="email" class="form-label">Email:</label>
                         <input type="email" class="form-control form-control-sm" id="email" v-model="email"
@@ -11,23 +11,14 @@
                             Please enter your email.
                         </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Senha:</label>
-                        <input type="password" class="form-control form-control-sm" id="password" v-model="password"
-                            placeholder="Digite sua senha" required>
-                        <div class="invalid-feedback">
-                            Please enter your password.
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <a @click="$router.push('/reset')" class="link">Recuperar Senha?</a>
-                        <button type="submit" class="btn btn-success float-start">Entrar</button>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-success float-start">Recuperar a minha senha</button>
                     </div>
                 </form>
                 <hr>
                 <div class="d-flex justify-content-between">
-                    <p>Ainda não tem conta?</p>
-                    <button @click="$router.push('/register')" class="link btn btn-primary float-start">Cadastrar-se aqui</button>
+                    <p>Você também pode:</p>
+                    <button @click="$router.push('/login')" class="link btn btn-primary float-start">Voltar ao login</button>
                 </div>
             </div>
         </div>
@@ -37,19 +28,16 @@
 <script>
 //@click="$router.push('/register')"
 export default {
-    name: "LoginForm",
+    name: "ResetPasswordForm",
     data() {
         return {
-            email: 'admin@example.com',
-            password: '123123'
+            email: 'admin@example.com'
         }
     },
     methods: {
         login() {
             // Lógica de registro
             console.log('Email:', this.email)
-            console.log('Password:', this.password)
-            this.$router.push('/admin')
         }
     }
 }
