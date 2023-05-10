@@ -2,45 +2,61 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Anotações</li>
+            <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
         </ol>
     </nav>
-    <div class="row">
-        <div class="col-md-8">
-            <h4>Filtros:</h4>
-            <div class="row">
-                <div class="col-md-6">
-                    <label>Anotaçao</label>
-                    <input type="text" class="form-control" name="body" placeholder="Digite um trecho da anotação">
+    <div class="row text-center">
+        <div class="col-md-3">
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-header">Total de anotações</div>
+                <div class="card-body">
+                    <h5 class="card-title">95</h5>
                 </div>
-                <div class="col-md-3">
-                    <label>Status</label>
-                    <select class="form-control">
-                        <option>Em Progresso</option>
-                        <option>Pendente</option>
-                        <option>Concluído</option>
-                    </select>
-                </div>
-                <div class="col-md-3">
-                    <label>Data de Criação:</label>
-                    <input type="date" class="form-control" name="created_at">
+                <div class="card-footer">
+                    <a href="" class="btn btn-link">Ver mais</a>
                 </div>
             </div>
         </div>
         <div class="col-md-3">
-            <div class="row"> 
-                <h4>Ações:</h4>
-                <div class="row">
-                    <div class="d-flex justify-content-evenly mt-4">
-                        <button class="btn btn-primary">Inserir</button>
-                        <button class="btn btn-secondary">Pesquisar</button>
-                        <button class="btn btn-success">Exportar</button>
-                    </div>
+            <div class="card text-white bg-success mb-3">
+                <div class="card-header">Total Concluído</div>
+                <div class="card-body">
+                    <h5 class="card-title">95</h5>
+                </div>
+                <div class="card-footer">
+                    <a href="" class="btn btn-link">Ver mais</a>
                 </div>
             </div>
         </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-secondary mb-3">
+                <div class="card-header">Total Pendente</div>
+                <div class="card-body">
+                    <h5 class="card-title">95</h5>
+                </div>
+                <div class="card-footer">
+                    <a href="" class="btn btn-link">Ver mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-header">Total Em Progresso</div>
+                <div class="card-body">
+                    <h5 class="card-title">95</h5>
+                </div>
+                <div class="card-footer">
+                    <a href="" class="btn btn-link">Ver mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
         <div>
-            <table class="table table-dark table-hover mt-3">
+            <h4>Filtros:</h4>
+        </div>
+        <div>
+            <table class="table table-dark table-hover">
                 <thead>
                     <tr>
                         <th>Cod.</th>
@@ -61,7 +77,7 @@
                         <td>Pendente</td>
                         <td>10/05/2023</td>
                         <td>
-                            <button class="btn btn-primary">Editar</button>
+                            <button class="btn btn-info">Log</button>
                         </td>
                     </tr>
                     <tr>
@@ -74,7 +90,7 @@
                         <td>Pendente</td>
                         <td>10/05/2023</td>
                         <td>
-                            <button class="btn btn-primary">Editar</button>
+                            <button class="btn btn-info">Log</button>
                         </td>
                     </tr>
                     <tr>
@@ -87,7 +103,7 @@
                         <td>Pendente</td>
                         <td>10/05/2023</td>
                         <td>
-                            <button class="btn btn-primary">Editar</button>
+                            <button class="btn btn-info">Log</button>
                         </td>
                     </tr>
                     <tr>
@@ -100,7 +116,7 @@
                         <td>Pendente</td>
                         <td>10/05/2023</td>
                         <td>
-                            <button class="btn btn-primary">Editar</button>
+                            <button class="btn btn-info">Log</button>
                         </td>
                     </tr>
                     <tr>
@@ -113,7 +129,7 @@
                         <td>Pendente</td>
                         <td>10/05/2023</td>
                         <td>
-                            <button class="btn btn-primary">Editar</button>
+                            <button class="btn btn-info">Log</button>
                         </td>
                     </tr>
                     <tr>
@@ -126,7 +142,33 @@
                         <td>Pendente</td>
                         <td>10/05/2023</td>
                         <td>
-                            <button class="btn btn-primary">Editar</button>
+                            <button class="btn btn-info">Log</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit. Repudiandae culpa commodi nesciunt.
+                            Tempora, quod. Voluptatem asperiores nihil, soluta tenetur veritatis recusandae error
+                            perferendis
+                            mollitia quidem velit modi, autem eligendi fuga? </td>
+                        <td>Pendente</td>
+                        <td>10/05/2023</td>
+                        <td>
+                            <button class="btn btn-info">Log</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit. Repudiandae culpa commodi nesciunt.
+                            Tempora, quod. Voluptatem asperiores nihil, soluta tenetur veritatis recusandae error
+                            perferendis
+                            mollitia quidem velit modi, autem eligendi fuga? </td>
+                        <td>Pendente</td>
+                        <td>10/05/2023</td>
+                        <td>
+                            <button class="btn btn-info">Log</button>
                         </td>
                     </tr>
                 </tbody>
@@ -137,8 +179,26 @@
 
 <script>
 export default {
-    name: "NotesList"
+    name: 'DashboardView'
 }
 </script>
+<style scoped>
+.card a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+</style>
 
-<style></style>
+<style scoped>
+.card,
+.card-header,
+.card-body,
+.card-title,
+.card-text {
+    background: none;
+}
+
+.table th td {
+    color: var(--font-color)
+}
+</style>

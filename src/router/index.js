@@ -1,10 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import AppLayout from '@/components/AppLayout.vue'
 import AdminLayout from '@/components/AdminLayout.vue'
+
 import LoginForm from '@/views/auth/LoginForm.vue'
 import RegisterForm from '@/views/auth/RegisterForm.vue'
 import ResetPasswordForm from '@/views/auth/ResetPasswordForm.vue'
+
 import NotesList from '@/views/admin/notes/NotesList.vue'
+import DashboardView from '@/views/admin/dashboard/DashboardView.vue'
+import ProfileView from '@/views/admin/profile/ProfileView.vue'
 
 const routes = [
   {
@@ -30,8 +34,16 @@ const routes = [
     component: AdminLayout,
     children: [
       {
+        path: 'dashboard',
+        component: DashboardView
+      },
+      {
         path: 'notes',
         component: NotesList
+      },
+      {
+        path: 'profile',
+        component: ProfileView
       }
     ]
   }

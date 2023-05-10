@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="main_content">
+  <div id="app" :class="{ main_content: loggedIn == false }">
     <component :is="layout"></component>
   </div>
 </template>
@@ -19,5 +19,4 @@ export default {
 }
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
