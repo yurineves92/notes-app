@@ -49,7 +49,7 @@ export default {
             // Lógica de registro
             console.log('Email:', this.email)
             console.log('Password:', this.password)
-            this.$router.push('/admin')
+            this.$router.push('/admin/dashboard')
         }
     }
 }
