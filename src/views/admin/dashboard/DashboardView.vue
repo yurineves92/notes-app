@@ -158,19 +158,6 @@
                             <button class="btn btn-info">Log</button>
                         </td>
                     </tr>
-                    <tr>
-                        <td>8</td>
-                        <td class="max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Lorem
-                            ipsum dolor sit amet consectetur adipisicing elit. Repudiandae culpa commodi nesciunt.
-                            Tempora, quod. Voluptatem asperiores nihil, soluta tenetur veritatis recusandae error
-                            perferendis
-                            mollitia quidem velit modi, autem eligendi fuga? </td>
-                        <td>Pendente</td>
-                        <td>10/05/2023</td>
-                        <td>
-                            <button class="btn btn-info">Log</button>
-                        </td>
-                    </tr>
                 </tbody>
             </table>
         </div>
